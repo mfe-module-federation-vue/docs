@@ -1,106 +1,117 @@
-# docs
 Start here and understand our project
 
-## Architecture
+# Architecture
 
-### Root
+## Root
+> This is the entry point of the project, the `host` of the a architecture, know as app shell too.
 > [Repo](https://github.com/mfe-module-federation-vue/root)
 
-#### Remotes Used
+### Remotes Used
 - Auth
 - Products
 - Profile
 - Cart
 - Design System
 
-#### Package
+### Package
 - dealful-package
 
-### Auth
+_________________________________________________________
+
+## Auth
+> This is the authentication module, that deals and the only who knows the user state
 > [Repo](https://github.com/mfe-module-federation-vue/auth)
 
-#### Exposes
-**Components**
+### Exposes
+*Components*
 - Login
 - Logout
 
-**Service**
+*Service*
 - UserTools
 
-#### Remotes Used
+### Remotes Used
 - Design System
 
-#### Package
+### Package
 - dealful-package
 
 
-### Products
+_________________________________________________________
+## Products
+> This is the module in charge of retrieving the product list and add it to the cart
 > [Repo](https://github.com/mfe-module-federation-vue/products)
 
-#### Exposes
-**Page**
+### Exposes
+*Page*
 - Products
 
-#### Remotes Used
+### Remotes Used
 - Design System
 
-#### Package
+### Package
 - dealful-package
 
 
-### Profile
+_________________________________________________________
+## Profile
+> This is the module in charge of showing the user info, both in the user page and the user component
 > [Repo](https://github.com/mfe-module-federation-vue/profile)
 
-#### Exposes
-**Components**
+### Exposes
+*Components*
 - Profile
 
-**Route**
+*Route*
 - Profile Route (self invoke the FullProfile Page)
 
 
-#### Remotes Used
+### Remotes Used
 - Auth
 - Design System
 
-#### Package
+### Package
 - dealful-package
 
 
-### Cart
+_________________________________________________________
+## Cart
+> This is the module in charge of checkout, the cart
 > [Repo](https://github.com/mfe-module-federation-vue/cart)
 
-#### Exposes
-**Components**
+### Exposes
+*Components*
 - CartIcon
 
-**Pages**
+*Pages*
 - Cart
 
- #### Remotes Used
+ ### Remotes Used
 - Design System
 
-#### Package
+### Package
 - dealful-package
 
-
-### dealful-package
-> [Repo](https://github.com/mfe-module-federation-vue/dealful-package)
- 
-Dealful is a package to create deals for our mfes, it's in some sort of way the "contract" between the modules to the comunication be asure.
-
-
-
-### Design System
+_________________________________________________________
+## Design System
+> As the name indicates its the module in charge of componentization
 > [Repo](https://github.com/mfe-module-federation-vue/design-system)
 
 
-#### Exposes
-**Components**
+### Exposes
+*Components*
 - Inpuy
 - Button
 - UserPicture
 - Vuetify `v-app` wrapper
 
-**FIles**
+*Files*
 - Vuetify config
+
+
+_________________________________________________________
+
+## dealful-package 
+> Dealful is a package to create deals for our mfes, it's in some sort of way the "contract" between the modules to the comunication be asure.
+> [Repo](https://github.com/mfe-module-federation-vue/dealful-package)
+
